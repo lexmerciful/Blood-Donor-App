@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@android:color/white"
+    android:layout_marginRight="5dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginBottom="5dp"
+    android:layout_height="110dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_weight="0.7"
+        android:layout_height="0.1dp">
+
+    <RelativeLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+            <ImageView
+                android:src="@drawable/a_negative"
+                android:id="@+id/bloodgroupimageview"
+                android:layout_centerVertical="true"
+                android:layout_width="60dp"
+                android:layout_height="60dp"/>
+
+            <TextView
+                android:layout_marginTop="4dp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/donornametextview"
+                android:layout_toRightOf="@+id/bloodgroupimageview"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:text="Lexx Merciful"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/donorlocationtextview"
+                android:layout_marginLeft="10dp"
+                android:layout_below="@+id/donornametextview"
+                android:layout_toRightOf="@+id/bloodgroupimageview"
+                android:text="Delaware, USA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            </RelativeLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_alignParentBottom="true"
+            android:background="@color/LightAsh"
+            android:layout_width="match_parent"
+            android:layout_height="1.5dp"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_weight="0.3"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp">
+
+    <!-- Call Layout -->
+        <RelativeLayout
+            android:id="@+id/calllayout"
+            android:layout_gravity="center_vertical"
+            android:clickable="true"
+            android:layout_weight="0.33"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_toLeftOf="@+id/calltext"
+                android:src="@drawable/phone"
+                android:layout_width="18dp"
+                android:layout_height="18dp"/>
+
+            <TextView
+                android:id="@+id/calltext"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="5dp"
+                android:text="Call"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            </RelativeLayout>
+
+        <!-- Email Layout -->
+        <RelativeLayout
+            android:clickable="true"
+            android:id="@+id/emaillayout"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.34"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_toLeftOf="@+id/emailtext"
+                android:src="@drawable/mail"
+                android:layout_width="18dp"
+                android:layout_height="18dp"/>
+
+            <TextView
+                android:id="@+id/emailtext"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="5dp"
+                android:text="Mail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            </RelativeLayout>
+
+        <!-- Delete Layout -->
+        <RelativeLayout
+            android:layout_gravity="center_vertical"
+            android:clickable="true"
+            android:id="@+id/deletelayout"
+            android:layout_weight="0.33"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_toLeftOf="@+id/deletetext"
+                android:src="@drawable/delete"
+                android:layout_width="18dp"
+                android:layout_height="18dp"/>
+
+            <TextView
+                android:id="@+id/deletetext"
+                android:layout_marginLeft="5dp"
+                android:layout_centerInParent="true"
+                android:text="Delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+</LinearLayout>
